@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黑兽2动漫樱花动漫 - 官方视频门户 | 原创正版高清内容生态</title>
+<meta name="description" content="黑兽2动漫樱花动漫官方网站，专注原创正版高清动漫视频内容，汇聚创作者社区，呈现企业级内容生态与品牌故事。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23161a24'/%3E%3Cpath d='M20 18h18a10 10 0 0 1 0 20H28l-8 10z' fill='%23ff4d6d'/%3E%3Ccircle cx='38' cy='28' r='4' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+:root{
+  --hs-bg:#0f1218;
+  --hs-bg2:#161a24;
+  --hs-panel:#1b2030;
+  --hs-panel2:#20273a;
+  --hs-line:#2b3348;
+  --hs-text:#e9edf6;
+  --hs-muted:#9aa6c0;
+  --hs-accent:#ff4d6d;
+  --hs-accent2:#4dc9ff;
+  --hs-gold:#ffd166;
+  --hs-green:#4dffa6;
+  --hs-radius:16px;
+  --hs-shadow:0 18px 40px rgba(0,0,0,.45);
+  --hs-head-h:112px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hs-head-h) + 12px)}
+body{
+  margin:0;
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  background:
+    radial-gradient(1100px 600px at 12% -8%, rgba(255,77,109,.20), transparent 60%),
+    radial-gradient(900px 520px at 92% 0%, rgba(77,201,255,.16), transparent 62%),
+    linear-gradient(180deg,#0f1218 0%,#10141c 46%,#0c0f15 100%);
+  color:var(--hs-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0}
+.hs-wrap{width:min(1180px,92vw);margin:0 auto}
+.hs-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- sticky notice + header ---------- */
+.hs-sticky{position:sticky;top:0;z-index:80;background:rgba(13,16,22,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--hs-line)}
+.hs-notice{display:flex;align-items:center;gap:12px;font-size:13px;padding:8px 0;overflow:hidden}
+.hs-notice__tag{flex:0 0 auto;background:linear-gradient(135deg,var(--hs-accent),#ff8a5c);color:#12141b;font-weight:800;border-radius:999px;padding:2px 10px;font-size:12px;letter-spacing:.5px}
+.hs-notice__track{flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--hs-muted)}
+.hs-notice__track b{color:var(--hs-text);font-weight:600}
+.hs-notice__link{flex:0 0 auto;color:var(--hs-accent2);font-size:12.5px;border-bottom:1px dashed rgba(77,201,255,.5)}
+.hs-notice__link:hover{color:#8fe1ff}
+
+.hs-header{display:flex;align-items:center;gap:18px;padding:12px 0}
+.hs-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.hs-brand__mark{width:38px;height:38px;border-radius:11px;background:linear-gradient(140deg,#ff4d6d,#7b5cff 60%,#4dc9ff);display:grid;place-items:center;font-weight:900;color:#0d1016;font-size:17px;letter-spacing:-1px}
+.hs-brand__name{font-weight:800;font-size:17px;letter-spacing:.4px}
+.hs-brand__name small{display:block;font-size:10.5px;font-weight:500;color:var(--hs-muted);letter-spacing:2px}
+.hs-nav{display:flex;gap:4px;flex:1 1 auto;min-width:0;overflow:auto}
+.hs-nav a{padding:7px 11px;border-radius:9px;font-size:14px;color:var(--hs-muted);white-space:nowrap;transition:.2s}
+.hs-nav a:hover,.hs-nav a:focus-visible{color:#fff;background:rgba(255,255,255,.07);outline:none}
+.hs-headtools{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.hs-search{display:flex;align-items:center;background:var(--hs-panel);border:1px solid var(--hs-line);border-radius:999px;padding:3px 4px 3px 12px;gap:6px}
+.hs-search input{background:transparent;border:0;color:var(--hs-text);width:150px;font-size:13.5px;padding:6px 0;outline:none}
+.hs-search input::placeholder{color:#6f7c96}
+.hs-search button{background:linear-gradient(135deg,var(--hs-accent),#ff8a5c);color:#12141b;font-weight:800;border-radius:999px;padding:6px 13px;font-size:13px}
+.hs-search__hint{position:absolute;margin-top:44px;background:var(--hs-panel2);border:1px solid var(--hs-line);border-radius:12px;padding:10px 14px;font-size:12.5px;color:var(--hs-muted);box-shadow:var(--hs-shadow);max-width:280px;display:none;z-index:90}
+.hs-search__hint.is-on{display:block}
+.hs-burger{display:none;width:40px;height:38px;border-radius:10px;background:var(--hs-panel);border:1px solid var(--hs-line);color:var(--hs-text);font-size:17px}
+
+/* ---------- hero ---------- */
+.hs-hero{padding:44px 0 58px;border-bottom:1px solid rgba(43,51,72,.6)}
+.hs-hero__grid{display:grid;grid-template-columns:5fr 5fr;gap:44px;align-items:center;minmax:0}
+.hs-hero__kick{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.6px;color:var(--hs-accent2);border:1px solid rgba(77,201,255,.35);border-radius:999px;padding:5px 13px;margin-bottom:18px;background:rgba(77,201,255,.07)}
+.hs-hero h1{font-size:clamp(34px,4.6vw,58px);line-height:1.1;margin:0 0 16px;letter-spacing:-1px;font-weight:900}
+.hs-hero h1 em{font-style:normal;background:linear-gradient(120deg,#ff4d6d,#ffd166 55%,#4dc9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hs-hero__lead{font-size:15.5px;color:#c3cce0;margin:0 0 14px;max-width:56ch}
+.hs-hero__intro{font-size:14px;color:var(--hs-muted);margin:0 0 22px;max-width:58ch}
+.hs-hero__cta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.hs-btn{display:inline-flex;align-items:center;gap:8px;border-radius:11px;padding:11px 20px;font-size:14px;font-weight:700;transition:.2s;border:1px solid transparent}
+.hs-btn--main{background:linear-gradient(135deg,var(--hs-accent),#ff8a5c);color:#12141b;box-shadow:0 10px 24px rgba(255,77,109,.28)}
+.hs-btn--main:hover{transform:translateY(-2px)}
+.hs-btn--ghost{background:rgba(255,255,255,.05);border-color:var(--hs-line);color:var(--hs-text)}
+.hs-btn--ghost:hover{background:rgba(255,255,255,.1)}
+.hs-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:6px;border-top:1px solid var(--hs-line);padding-top:18px}
+.hs-stats b{display:block;font-size:22px;color:#fff;font-weight:900;letter-spacing:-.5px}
+.hs-stats span{font-size:12px;color:var(--hs-muted)}
+.hs-hero__media{position:relative}
+.hs-hero__media figure{margin:0;border-radius:22px;overflow:hidden;border:1px solid var(--hs-line);box-shadow:var(--hs-shadow);background:#0b0e14}
+.hs-hero__media img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.hs-hero__badge{position:absolute;left:18px;bottom:18px;background:rgba(11,14,20,.82);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:9px 14px;font-size:12.5px;color:#dfe6f5;backdrop-filter:blur(8px)}
+.hs-hero__badge strong{color:var(--hs-gold)}
+.hs-play{position:absolute;right:18px;top:18px;width:54px;height:54px;border-radius:50%;background:linear-gradient(140deg,var(--hs-accent),#ffd166);display:grid;place-items:center;color:#161a24;font-size:19px;box-shadow:0 12px 30px rgba(255,77,109,.42)}
+
+/* ---------- generic section ---------- */
+.hs-sec{padding:56px 0}
+.hs-sec--alt{background:linear-gradient(180deg,rgba(27,32,48,.55),rgba(15,18,24,0));border-block:1px solid rgba(43,51,72,.5)}
+.hs-sec__head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:26px;flex-wrap:wrap}
+.hs-sec__head h2{font-size:clamp(22px,2.6vw,30px);margin:0;letter-spacing:-.6px;font-weight:900}
+.hs-sec__head h2 span{color:var(--hs-accent2);font-weight:900}
+.hs-sec__head p{margin:4px 0 0;font-size:13.5px;color:var(--hs-muted);max-width:62ch}
+.hs-sec__more{font-size:13px;color:var(--hs-accent2);border-bottom:1px dashed rgba(77,201,255,.42);white-space:nowrap}
+
+/* ---------- tags ---------- */
+.hs-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.hs-tag{border-radius:999px;padding:6px 14px;font-size:12.5px;background:var(--hs-panel);border:1px solid var(--hs-line);color:var(--hs-muted);transition:.2s}
+.hs-tag:hover,.hs-tag.is-on{background:rgba(255,77,109,.14);border-color:rgba(255,77,109,.5);color:#ffd0d9}
+
+/* ---------- video focus + list ---------- */
+.hs-focus{display:grid;grid-template-columns:6fr 4fr;gap:26px;margin-bottom:34px}
+.hs-focus__main{border-radius:18px;overflow:hidden;border:1px solid var(--hs-line);background:var(--hs-panel);display:flex;flex-direction:column}
+.hs-focus__main img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.hs-focus__body{padding:18px 20px 20px}
+.hs-focus__body h3{margin:0 0 8px;font-size:20px;font-weight:800;line-height:1.4}
+.hs-focus__body p{margin:0 0 12px;font-size:13.5px;color:var(--hs-muted)}
+.hs-list{display:grid;gap:12px}
+.hs-vcard{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:14px;align-items:center;background:var(--hs-panel);border:1px solid var(--hs-line);border-radius:14px;padding:12px;transition:.2s}
+.hs-vcard:hover{border-color:rgba(77,201,255,.45);transform:translateY(-2px)}
+.hs-vcard figure{margin:0;border-radius:10px;overflow:hidden;background:#0b0e14}
+.hs-vcard img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.hs-vcard h4{margin:0 0 4px;font-size:14.5px;font-weight:700;line-height:1.45}
+.hs-vcard p{margin:0;font-size:12.5px;color:var(--hs-muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hs-meta{display:flex;flex-wrap:wrap;gap:10px;font-size:11.5px;color:#8492ad;margin-top:6px}
+.hs-meta b{color:var(--hs-gold);font-weight:700}
+.hs-acts{display:flex;gap:6px}
+.hs-act{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.05);border:1px solid var(--hs-line);color:var(--hs-muted);display:grid;place-items:center;font-size:14px;transition:.18s}
+.hs-act:hover{color:#fff;border-color:rgba(255,77,109,.5);background:rgba(255,77,109,.13)}
+.hs-act.is-on{color:#fff;background:linear-gradient(135deg,var(--hs-accent),#ff8a5c);border-color:transparent}
+
+/* ---------- topic / columns ---------- */
+.hs-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.hs-panel{background:var(--hs-panel);border:1px solid var(--hs-line);border-radius:var(--hs-radius);padding:20px;display:flex;flex-direction:column;gap:10px}
+.hs-panel h3{margin:0;font-size:16.5px;font-weight:800}
+.hs-panel .hs-state{font-size:11.5px;color:var(--hs-green);border:1px solid rgba(77,255,166,.35);border-radius:999px;padding:1px 9px;width:fit-content;background:rgba(77,255,166,.07)}
+.hs-panel p{margin:0;font-size:13px;color:var(--hs-muted)}
+.hs-panel ul{margin:0;padding-left:18px;font-size:13px;color:#c3cce0;display:grid;gap:7px}
+.hs-panel ul li::marker{color:var(--hs-accent2)}
+
+/* ---------- longform keyword analysis ---------- */
+.hs-longform{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:34px;align-items:start}
+.hs-longform h2{font-size:clamp(22px,2.6vw,30px);margin:0 0 8px;letter-spacing:-.6px}
+.hs-longform h3{font-size:16.5px;margin:24px 0 8px;color:#fff;display:flex;align-items:center;gap:9px}
+.hs-longform h3::before{content:"";width:8px;height:8px;border-radius:2px;background:linear-gradient(135deg,var(--hs-accent),var(--hs-gold));flex:0 0 auto}
+.hs-longform p{margin:0 0 12px;font-size:14px;color:#c3cce0;text-align:justify}
+.hs-longform p b{color:#fff;font-weight:700}
+.hs-side{display:grid;gap:14px;position:sticky;top:calc(var(--hs-head-h) + 16px)}
+.hs-side__card{border-radius:14px;border:1px solid var(--hs-line);background:linear-gradient(160deg,var(--hs-panel2),var(--hs-panel));padding:16px 18px}
+.hs-side__card h4{margin:0 0 8px;font-size:14px;color:#fff}
+.hs-side__card ol,.hs-side__card ul{margin:0;padding-left:17px;font-size:12.8px;color:var(--hs-muted);display:grid;gap:6px}
+.hs-side__card b{color:var(--hs-gold)}
+
+/* ---------- authors ---------- */
+.hs-authors{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.hs-author{background:var(--hs-panel);border:1px solid var(--hs-line);border-radius:var(--hs-radius);padding:18px;display:flex;flex-direction:column;gap:9px;transition:.2s}
+.hs-author:hover{border-color:rgba(255,209,102,.45);transform:translateY(-3px)}
+.hs-author__head{display:flex;align-items:center;gap:11px}
+.hs-avatar{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-weight:900;font-size:18px;color:#0d1016;flex:0 0 auto}
+.hs-author__name{font-weight:800;font-size:14.5px}
+.hs-author__field{font-size:11.5px;color:var(--hs-muted)}
+.hs-author p{margin:0;font-size:12.5px;color:var(--hs-muted);line-height:1.7}
+.hs-author__stat{display:flex;gap:14px;font-size:11.5px;color:#8492ad;border-top:1px dashed var(--hs-line);padding-top:9px}
+.hs-author__stat b{color:#fff;font-weight:800;font-size:13px}
+.hs-author__btn{font-size:12px;color:var(--hs-accent2);width:fit-content;background:none;padding:0;border-bottom:1px dashed rgba(77,201,255,.45)}
+
+/* ---------- ranking + reviews ---------- */
+.hs-rank{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-bottom:30px}
+.hs-rank__col{background:var(--hs-panel);border:1px solid var(--hs-line);border-radius:var(--hs-radius);padding:18px}
+.hs-rank__col h3{margin:0 0 12px;font-size:15px;display:flex;justify-content:space-between;align-items:center}
+.hs-rank__col h3 span{font-size:11px;color:var(--hs-muted);font-weight:500}
+.hs-rank__col ol{margin:0;padding:0;list-style:none;display:grid;gap:10px;counter-reset:rk}
+.hs-rank__col li{counter-increment:rk;display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:8px;align-items:center;font-size:13px}
+.hs-rank__col li::before{content:counter(rk);color:var(--hs-accent);font-weight:900;font-size:13px}
+.hs-rank__col li em{font-style:normal;color:var(--hs-muted);font-size:11.5px;white-space:nowrap}
+.hs-rank__col li span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+.hs-reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.hs-review{background:var(--hs-panel);border:1px solid var(--hs-line);border-left:3px solid rgba(255,77,109,.6);border-radius:12px;padding:14px 16px}
+.hs-review__top{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--hs-muted);margin-bottom:6px}
+.hs-review__top b{color:#fff;font-size:13px}
+.hs-review p{margin:0;font-size:13px;color:#c8d0e2}
+
+/* ---------- faq ---------- */
+.hs-faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hs-faq details{background:var(--hs-panel);border:1px solid var(--hs-line);border-radius:12px;padding:14px 16px;transition:.2s}
+.hs-faq details[open]{border-color:rgba(77,201,255,.45);background:var(--hs-panel2)}
+.hs-faq summary{font-size:14px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.hs-faq summary::-webkit-details-marker{display:none}
+.hs-faq summary::after{content:"+";color:var(--hs-accent2);font-weight:900}
+.hs-faq details[open] summary::after{content:"–"}
+.hs-faq p{margin:10px 0 0;font-size:13px;color:var(--hs-muted)}
+
+/* ---------- news / partners ---------- */
+.hs-news{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.hs-news__item{background:var(--hs-panel);border:1px solid var(--hs-line);border-radius:12px;padding:16px}
+.hs-news__item time{font-size:11.5px;color:var(--hs-accent2)}
+.hs-news__item h3{margin:6px 0 6px;font-size:14.5px}
+.hs-news__item p{margin:0;font-size:12.5px;color:var(--hs-muted)}
+.hs-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px}
+.hs-partner{background:var(--hs-panel);border:1px solid var(--hs-line);border-radius:12px;padding:16px;text-align:center;font-size:13px;color:#c3cce0;letter-spacing:.5px}
+.hs-partner b{display:block;font-size:15px;color:#fff;margin-bottom:3px}
+
+/* ---------- footer ---------- */
+.hs-footer{border-top:1px solid var(--hs-line);background:linear-gradient(180deg,rgba(22,26,36,.8),#0b0e14);padding:44px 0 26px}
+.hs-footer__grid{display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr));gap:26px;margin-bottom:26px}
+.hs-footer h3{font-size:13.5px;margin:0 0 10px;color:#fff}
+.hs-footer p,.hs-footer li{font-size:12.5px;color:var(--hs-muted);margin:0}
+.hs-footer ul{list-style:none;padding:0;margin:0;display:grid;gap:7px}
+.hs-footer a:hover{color:var(--hs-accent2)}
+.hs-footer__bottom{border-top:1px solid var(--hs-line);padding-top:16px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12px;color:#7c88a1}
+
+/* ---------- floating ---------- */
+.hs-top{position:fixed;right:20px;bottom:24px;width:46px;height:46px;border-radius:14px;background:linear-gradient(140deg,var(--hs-accent),#ff8a5c);color:#12141b;font-size:19px;font-weight:900;display:none;place-items:center;box-shadow:0 12px 28px rgba(255,77,109,.4);z-index:70}
+.hs-top.is-on{display:grid}
+.hs-toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,20px);background:rgba(27,32,48,.96);border:1px solid var(--hs-line);color:#fff;font-size:13px;padding:10px 20px;border-radius:999px;box-shadow:var(--hs-shadow);opacity:0;pointer-events:none;transition:.28s;z-index:120}
+.hs-toast.is-on{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- modal ---------- */
+.hs-modal{position:fixed;inset:0;background:rgba(6,8,12,.74);backdrop-filter:blur(4px);display:none;place-items:center;z-index:110;padding:20px}
+.hs-modal.is-on{display:grid}
+.hs-modal__box{width:min(520px,94vw);background:var(--hs-panel2);border:1px solid var(--hs-line);border-radius:18px;padding:24px;box-shadow:var(--hs-shadow);max-height:86vh;overflow:auto}
+.hs-modal__box h3{margin:0 0 8px;font-size:18px}
+.hs-modal__box p{font-size:13px;color:var(--hs-muted);margin:0 0 14px}
+.hs-modal__box .hs-btn{margin-top:6px}
+.hs-share{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:8px}
+.hs-share button{background:var(--hs-panel);border:1px solid var(--hs-line);border-radius:11px;color:#dfe6f5;padding:12px 6px;font-size:13px}
+.hs-share button:hover{border-color:rgba(77,201,255,.5);color:#fff}
+
+/* ---------- responsive ---------- */
+@media (max-width:1024px){
+  .hs-hero__grid,.hs-focus,.hs-longform{grid-template-columns:1fr}
+  .hs-authors,.hs-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hs-cols,.hs-rank,.hs-news{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hs-side{position:static}
+}
+@media (max-width:760px){
+  :root{--hs-head-h:98px}
+  .hs-header{flex-wrap:wrap;gap:10px;padding:10px 0}
+  .hs-nav{order:3;flex-basis:100%;display:none;flex-direction:column;gap:2px;padding:6px 0}
+  .hs-nav.is-open{display:flex}
+  .hs-burger{display:grid;place-items:center;order:2}
+  .hs-headtools{order:2;margin-left:auto}
+  .hs-search input{width:100px}
+  .hs-notice__link{display:none}
+  .hs-hero{padding:30px 0 40px}
+  .hs-focus,.hs-cols,.hs-rank,.hs-reviews,.hs-faq,.hs-news,.hs-authors,.hs-partners,.hs-footer__grid{grid-template-columns:1fr}
+  .hs-vcard{grid-template-columns:84px minmax(0,1fr);}
+  .hs-vcard .hs-acts{grid-column:2;justify-self:start}
+  .hs-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .hs-stats b{font-size:18px}
+  .hs-sec{padding:42px 0}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="hs-sticky">
+  <div class="hs-wrap">
+    <div class="hs-notice">
+      <span class="hs-notice__tag">官方公告</span>
+      <div class="hs-notice__track"><b>《黑兽2》第二季正版分镜解析</b>上线 · 樱花动漫专区新增 12 部原创短片 · 冬季创作挑战报名开启，投稿可获首页推荐位</div>
+      <a class="hs-notice__link" href="#hs-updates">查看全部更新</a>
+    </div>
+    <header class="hs-header">
+      <a class="hs-brand" href="#hs-top">
+        <span class="hs-brand__mark">黑</span>
+        <span class="hs-brand__name">黑兽2动漫樱花动漫<small>SAKURA ANIME OFFICIAL</small></span>
+      </a>
+      <nav class="hs-nav" id="hsNav" aria-label="主导航">
+        <a href="#hs-videos">精选视频</a>
+        <a href="#hs-topics">专题企划</a>
+        <a href="#hs-story">品牌解析</a>
+        <a href="#hs-authors">创作者</a>
+        <a href="#hs-rank">口碑榜</a>
+        <a href="#hs-updates">企业动态</a>
+        <a href="#hs-faq">常见问题</a>
+      </nav>
+      <div class="hs-headtools">
+        <div class="hs-search" style="position:relative">
+          <label class="hs-sr-only" for="hsSearchInput">站内搜索</label>
+          <input id="hsSearchInput" type="search" placeholder="搜索番剧 / 创作者" autocomplete="off">
+          <button id="hsSearchBtn" type="button">搜索</button>
+          <div class="hs-search__hint" id="hsSearchHint" role="status"></div>
+        </div>
+        <button class="hs-burger" id="hsBurger" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="hsNav">☰</button>
+      </div>
+    </header>
+  </div>
+</div>
+
+<main id="hs-top">
+
+  <!-- HERO -->
+  <section class="hs-hero" aria-labelledby="hsHeroTitle">
+    <div class="hs-wrap hs-hero__grid">
+      <div>
+        <span class="hs-hero__kick">官方网站 · 原创正版 · 高清首播</span>
+        <h1 id="hsHeroTitle"><em>黑兽2动漫樱花动漫</em>官方视频门户</h1>
+        <p class="hs-hero__lead">以企业级内容标准运营的动漫影像平台，专注《黑兽2》系列与樱花动漫原创厂牌的精品内容，为创作者与观众搭建值得信赖的高品质内容生态。</p>
+        <p class="hs-hero__intro">作为深耕垂直领域的动漫品牌官网，我们把分镜解析、幕后纪录、创作者访谈与社区共创放进同一条内容流水线。平台持续运营、官方发布，每一支视频都经过正版授权与高清修复，让观众在看懂故事的同时，也看见一代动画人的匠心与坚持。</p>
+        <div class="hs-hero__cta">
+          <a class="hs-btn hs-btn--main" href="#hs-videos">▶ 进入精选视频</a>
+          <a class="hs-btn hs-btn--ghost" href="#hs-authors">认识创作者</a>
+          <button class="hs-btn hs-btn--ghost" type="button" data-hs-modal="submit">我要投稿</button>
+        </div>
+        <div class="hs-stats">
+          <div><b>1,286</b><span>正版高清片库（部）</span></div>
+          <div><b>342</b><span>签约创作者（位）</span></div>
+          <div><b>9,700万</b><span>累计播放（次）</span></div>
+        </div>
+      </div>
+      <div class="hs-hero__media">
+        <figure>
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23131a2b'/%3E%3Cstop offset='0.55' stop-color='%232b1d3d'/%3E%3Cstop offset='1' stop-color='%230b1220'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ff4d6d'/%3E%3Cstop offset='1' stop-color='%23ffd166'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23g1)'/%3E%3Ccircle cx='500' cy='90' r='120' fill='%23ff4d6d' opacity='0.18'/%3E%3Ccircle cx='120' cy='320' r='150' fill='%234dc9ff' opacity='0.14'/%3E%3Cpath d='M0 300 L120 210 L220 270 L330 160 L450 250 L640 140 L640 400 L0 400 Z' fill='%23131a2b' opacity='0.9'/%3E%3Cpath d='M0 330 L110 260 L230 310 L340 220 L470 300 L640 210 L640 400 L0 400 Z' fill='%230a0f1a'/%3E%3Cg fill='none' stroke='url(%23g2)' stroke-width='4' opacity='0.9'%3E%3Cpath d='M300 130 l70 40 -70 40 z'/%3E%3Ccircle cx='335' cy='170' r='72' stroke-dasharray='6 10'/%3E%3C/g%3E%3Cg fill='%23ffd166'%3E%3Ccircle cx='335' cy='170' r='6'/%3E%3C/g%3E%3Ctext x='42' y='68' fill='%23e9edf6' font-size='26' font-family='sans-serif' font-weight='bold'%3E黑兽2 · 官方首播%3C/text%3E%3Ctext x='42' y='98' fill='%239aa6c0' font-size='14' font-family='sans-serif'%3E樱花动漫原创修复版 · 4K 高清%3C/text%3E%3C/svg%3E" alt="黑兽2动漫樱花动漫官方首播主视觉，深色画面中央悬浮播放标识与山形剪影">
+        </figure>
+        <span class="hs-play" aria-hidden="true">▶</span>
+        <div class="hs-hero__badge">本周首播 <strong>《黑兽2》第二季 06 集</strong> · 周五 20:00</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="hs-sec hs-sec--alt" id="hs-videos" aria-labelledby="hsVideosTitle">
+    <div class="hs-wrap">
+      <div class="hs-sec__head">
+        <div>
+          <h2 id="hsVideosTitle">精选视频 · <span>黑兽2动漫樱花动漫</span>官方片单</h2>
+          <p>焦点大图与文字条目混合编排，重点内容配缩略图，其余以标题、摘要、标签与数据呈现，方便快速扫读。</p>
+        </div>
+        <a class="hs-sec__more" href="#hs-rank">查看口碑榜 →</a>
+      </div>
+
+      <div class="hs-tags" id="hsTagBar">
+        <button class="hs-tag is-on" type="button" data-hs-tag="all">全部</button>
+        <button class="hs-tag" type="button" data-hs-tag="分镜解析">分镜解析</button>
+        <button class="hs-tag" type="button" data-hs-tag="幕后">幕后</button>
+        <button class="hs-tag" type="button" data-hs-tag="人物访谈">人物访谈</button>
+        <button class="hs-tag" type="button" data-hs-tag="城市">城市探索</button>
+        <button class="hs-tag" type="button" data-hs-tag="治愈">治愈影像</button>
+      </div>
+
+      <div class="hs-focus">
+        <article class="hs-focus__main" data-hs-cat="分镜解析">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='a1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2318203a'/%3E%3Cstop offset='1' stop-color='%23351d30'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23a1)'/%3E%3Cg stroke='%234dc9ff' stroke-width='2' fill='none' opacity='0.55'%3E%3Crect x='48' y='52' width='150' height='96' rx='8'/%3E%3Crect x='216' y='52' width='150' height='96' rx='8'/%3E%3Crect x='384' y='52' width='150' height='96' rx='8'/%3E%3Crect x='48' y='170' width='150' height='96' rx='8'/%3E%3Crect x='216' y='170' width='150' height='96' rx='8'/%3E%3Crect x='384' y='170' width='150' height='96' rx='8'/%3E%3C/g%3E%3Cg fill='%23ffd166'%3E%3Ccircle cx='123' cy='100' r='12'/%3E%3Cpath d='M291 88 l34 22 -34 22 z'/%3E%3C/g%3E%3Cg fill='%23ff4d6d' opacity='0.85'%3E%3Cpath d='M420 200 h80 v10 h-80 z'/%3E%3Cpath d='M420 226 h52 v8 h-52 z'/%3E%3C/g%3E%3Ctext x='470' y='300' fill='%23e9edf6' font-size='16' font-family='sans-serif'%3E分镜拆解 · 第 06 集%3C/text%3E%3C/svg%3E" alt="黑兽2第二季第6集分镜拆解画面，六宫格构图与黄色播放点">
+          <div class="hs-focus__body">
+            <h3>《黑兽2》第二季第 06 集分镜逐帧拆解：一场夜雨的调度逻辑</h3>
+            <p>从空镜入场的雨滴密度，到角色回头时的一次呼吸停顿，这集用 27 个镜头完成了情绪的收束。我们把导演组的分镜手稿与成片逐帧对照，讲清“慢”为什么反而更有力量，也解释樱花动漫修复版在暗部层次上的处理方式。</p>
+            <div class="hs-meta"><span>分镜解析</span><span>作者：雾岛分镜室</span><span>播放 <b>128.4万</b></span><span>点赞 <b>3.1万</b></span></div>
+            <div class="hs-acts" style="margin-top:12px">
+              <button class="hs-act" type="button" data-hs-like aria-pressed="false" title="点赞">♥</button>
+              <button class="hs-act" type="button" data-hs-fav aria-pressed="false" title="收藏">★</button>
+              <button class="hs-act" type="button" data-hs-share title="分享">↗</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="hs-list" id="hsFocusList">
+          <article class="hs-vcard" data-hs-cat="幕后">
+            <figure><img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%231b2030'/%3E%3Cpath d='M0 140 L70 96 L130 124 L200 70 L320 120 L320 180 L0 180 Z' fill='%232b3348'/%3E%3Ccircle cx='250' cy='52' r='26' fill='%23ffd166' opacity='0.85'/%3E%3Crect x='26' y='30' width='96' height='8' rx='4' fill='%23ff4d6d'/%3E%3C/svg%3E" alt="黑兽2幕后制作纪录缩略图，暖黄光源与山形色块"></figure>
+            <div>
+              <h4>幕后：一支 12 人小队如何完成 4K 修复</h4>
+              <p>从胶片扫描到色彩管理，修复组用六个月重制了第一季全部素材。</p>
+              <div class="hs-meta"><span>幕后</span><span>播放 <b>56.2万</b></span></div>
+            </div>
+            <div class="hs-acts"><button class="hs-act" type="button" data-hs-like aria-pressed="false" title="点赞">♥</button><button class="hs-act" type="button" data-hs-fav aria-pressed="false" title="收藏">★</button></div>
+          </article>
+
+          <article class="hs-vcard" data-hs-cat="人物访谈">
+            <figure><img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23221a30'/%3E%3Ccircle cx='160' cy='86' r='44' fill='%234dc9ff' opacity='0.28'/%3E%3Ccircle cx='160' cy='78' r='20' fill='%23e9edf6' opacity='0.9'/%3E%3Cpath d='M118 150 q42 -46 84 0 z' fill='%23e9edf6' opacity='0.75'/%3E%3Crect x='36' y='34' width='62' height='6' rx='3' fill='%23ff4d6d'/%3E%3Crect x='36' y='48' width='38' height='6' rx='3' fill='%239aa6c0'/%3E%3C/svg%3E" alt="人物访谈缩略图，浅色人物剪影与蓝色光圈"></figure>
+            <div>
+              <h4>访谈：配音演员谈“黑兽2”里最难的一场戏</h4>
+              <p>三段式情绪推进，录了 19 遍才过，她说这是一次真实的自救。</p>
+              <div class="hs-meta"><span>人物访谈</span><span>播放 <b>41.8万</b></span></div>
+            </div>
+            <div class="hs-acts"><button class="hs-act" type="button" data-hs-like aria-pressed="false" title="点赞">♥</button><button class="hs-act" type="button" data-hs-fav aria-pressed="false" title="收藏">★</button></div>
+          </article>
+
+          <article class="hs-vcard" data-hs-cat="城市">
+            <figure><img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%230e1f2a'/%3E%3Cg fill='%23142836'%3E%3Crect x='20' y='96' width='40' height='84'/%3E%3Crect x='72' y='70' width='34' height='110'/%3E%3Crect x='118' y='108' width='44' height='72'/%3E%3Crect x='174' y='58' width='30' height='122'/%3E%3Crect x='216' y='92' width='46' height='88'/%3E%3Crect x='274' y='76' width='28' height='104'/%3E%3C/g%3E%3Cg fill='%23ffd166'%3E%3Crect x='26' y='108' width='6' height='6'/%3E%3Crect x='80' y='84' width='6' height='6'/%3E%3Crect x='182' y='72' width='6' height='6'/%3E%3Crect x='226' y='106' width='6' height='6'/%3E%3C/g%3E%3C/svg%3E" alt="城市探索视频缩略图，深蓝夜景与亮黄窗灯"></figure>
+            <div>
+              <h4>城市探索：在取景地寻找动画里的那条老街</h4>
+              <p>实景与动画对照，三处标志建筑仍在，只是招牌换了颜色。</p>
+              <div class="hs-meta"><span>城市探索</span><span>播放 <b>33.5万</b></span></div>
+            </div>
+            <div class="hs-acts"><button class="hs-act" type="button" data-hs-like aria-pressed="false" title="点赞">♥</button><button class="hs-act" type="button" data-hs-fav aria-pressed="false" title="收藏">★</button></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="hs-list" id="hsMoreList" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+        <article class="hs-vcard" data-hs-cat="治愈">
+          <div>
+            <h4>治愈影像：把片尾曲听成一段日常</h4>
+            <p>没有台词的三分钟，只有窗、雨、晾晒的衬衫和一盏慢慢亮起的灯。</p>
+            <div class="hs-meta"><span>治愈影像</span><span>作者：南屿</span><span>播放 <b>22.9万</b></span><span>收藏 <b>1.7万</b></span></div>
+          </div>
+          <div class="hs-acts"><button class="hs-act" type="button" data-hs-like aria-pressed="false" title="点赞">♥</button><button class="hs-act" type="button" data-hs-fav aria-pressed="false" title="收藏">★</button></div>
+        </article>
+        <article class="hs-vcard" data-hs-cat="分镜解析">
+          <div>
+            <h4>教程干货：五分钟学会画一张动画分镜</h4>
+            <p>从构图框架到视线引导，附上可直接下载的模板与练习清单。</p>
+            <div class="hs-meta"><span>教程干货</span><span>作者：铅笔格</span><span>播放 <b>19.6万</b></span><span>点赞 <b>9,800</b></span></div>
+          </div>
+          <div class="hs-acts"><button class="hs-act" type="button" data-hs-like aria-pressed="false" title="点赞">♥</button><button class="hs-act" type="button" data-hs-fav aria-pressed="false" title="收藏">★</button></div>
+        </article>
+        <article class="hs-vcard" data-hs-cat="幕后">
+          <div>
+            <h4>品牌故事：樱花动漫的十年修复日志</h4>
+            <p>从一间 20 平米的剪辑房，到覆盖 1,286 部作品的正版片库。</p>
+            <div class="hs-meta"><span>品牌故事</span><span>作者：官方编辑部</span><span>播放 <b>15.3万</b></span></div>
+          </div>
+          <div class="hs-acts"><button class="hs-act" type="button" data-hs-like aria-pressed="false" title="点赞">♥</button><button class="hs-act" type="button" data-hs-fav aria-pressed="false" title="收藏">★</button></div>
+        </article>
+        <article class="hs-vcard" data-hs-cat="人物访谈">
+          <div>
+            <h4>访谈：一位美术监督的色彩方法论</h4>
+            <p>他坚持先定“空气色”，再让角色站进去，画面才不会飘。</p>
+            <div class="hs-meta"><span>人物访谈</span><span>作者：镜间</span><span>播放 <b>13.1万</b></span></div>
+          </div>
+          <div class="hs-acts"><button class="hs-act" type="button" data-hs-like aria-pressed="false" title="点赞">♥</button><button class="hs-act" type="button" data-hs-fav aria-pressed="false" title="收藏">★</button></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="hs-sec" id="hs-topics" aria-labelledby="hsTopicsTitle">
+    <div class="hs-wrap">
+      <div class="hs-sec__head">
+        <div>
+          <h2 id="hsTopicsTitle">专题企划 · <span>黑兽2动漫樱花动漫</span>年度内容矩阵</h2>
+          <p>三个长线专题同步更新，围绕原创解析、创作者访谈与在地文化展开，形成可持续的内容生态。</p>
+        </div>
+        <a class="hs-sec__more" href="#hs-faq">投稿加入 →</a>
+      </div>
+      <div class="hs-cols">
+        <article class="hs-panel">
+          <h3>专题一 · 一帧一帧看黑兽2</h3>
+          <span class="hs-state">更新中 · 每周五</span>
+          <p>用专业的分镜视角重新观看《黑兽2》，把每一场戏拆成可学习的创作方法。</p>
+          <ul>
+            <li>第 06 集：夜雨调度的 27 个镜头</li>
+            <li>第 05 集：群像戏的视线分配</li>
+            <li>第 04 集：静止画面里的运动感</li>
+          </ul>
+        </article>
+        <article class="hs-panel">
+          <h3>专题二 · 樱花的创作者们</h3>
+          <span class="hs-state">更新中 · 双周一更</span>
+          <p>走进创作者的真实工作现场，记录灵感、失误与重来的过程，呈现匠心与真实的创作感。</p>
+          <ul>
+            <li>在出租屋里做完一支短片的第 9 个月</li>
+            <li>动画美术监督的一天：从晨光到夜戏</li>
+            <li>配音棚里的三小时：情绪如何被校准</li>
+          </ul>
+        </article>
+        <article class="hs-panel">
+          <h3>专题三 · 动画取景地城市漫游</h3>
+          <span class="hs-state">已完结 · 共 8 集</span>
+          <p>沿着作品里的街景寻找现实对应，串联在地文化与城市记忆，形成有温度的影像档案。</p>
+          <ul>
+            <li>坡道尽头的那家旧书店还在营业</li>
+            <li>跨江大桥上的黄昏，与画面几乎一致</li>
+            <li>老街的招牌换了颜色，但雨没变</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LONG FORM -->
+  <section class="hs-sec hs-sec--alt" id="hs-story" aria-labelledby="hsStoryTitle">
+    <div class="hs-wrap hs-longform">
+      <div>
+        <h2 id="hsStoryTitle">品牌深度解析：黑兽2动漫樱花动漫如何成为一个官网级视频品牌</h2>
+        <p>黑兽2动漫樱花动漫并不是一个单纯的播放页面，而是一个以内容运营为核心的企业级视频品牌。我们把“看懂作品”作为第一目标，把“看见创作者”作为第二目标，再用社区把两件事连接起来。这样的结构决定了页面里的每一个板块都不是装饰，而是内容生态的一部分。</p>
+
+        <h3>一、从作品出发：原创与正版是平台的地基</h3>
+        <p>在动漫内容领域，观众最直接的需求是“看得完整、看得清楚”。黑兽2动漫樱花动漫的做法是把<b>原创</b>与<b>正版</b>放在最前面：所有上线内容都经过授权核对，重点作品提供高清修复版本，暗部层次、线条边缘与色彩饱和度都做统一校准。以《黑兽2》系列为例，修复团队会把原始素材与成片逐帧比对，先确认动态范围，再处理压缩噪点，最后统一输出规格。这个过程并不炫技，但它决定了一部作品在十年后还能不能被认真观看。</p>
+        <p>平台同时维护一条稳定的更新节奏：每周五晚间首播，次日上线解析版，第三日上线幕后花絮。固定的节奏让观众形成预期，也让创作者有明确的交付节点。对一家持续运营的视频品牌来说，节奏感本身就是品质的一部分。</p>
+
+        <h3>二、从创作者出发：垂直领域里的内容社区</h3>
+        <p>黑兽2动漫樱花动漫把创作者视为内容生态的共建者，而不是素材供应方。我们签约的 342 位创作者覆盖分镜解析、幕后纪录、人物访谈、城市探索、治愈影像等多个方向，平台提供统一的剪辑规范、字幕模板与封面建议，同时保留足够的个人风格空间。这样做的好处是，观众在不同作者的作品里能感到“频道感”，又不会觉得千篇一律。</p>
+        <p>社区层面，平台设置了投稿入口、作品互评与月度创作挑战。创作者上传作品后，会收到来自编辑与同行的双向反馈；优秀作品进入首页推荐位，并获得官方分发与跨平台传播支持。我们相信，<b>值得信赖</b>的关系来自长期、透明、可预期的合作，而不是一次性的流量刺激。</p>
+
+        <h3>三、从观众出发：把“看视频”变成“参与内容”</h3>
+        <p>观众在这里不只是播放量的贡献者。点赞、收藏、短评、弹幕式反馈与评分摘要共同构成了作品的第二层信息：它能告诉后来者一段内容值不值得看，也能告诉创作者哪里打动了人。平台的口碑榜综合播放完成率、收藏率与短评情感倾向，避免单纯以播放量排序，让更多踏实做内容的中小创作者有机会被看见。</p>
+        <p>同时，官方定期整理观众提问并回访创作者，形成“提问—回答—再创作”的循环。很多专题的选题就来自评论区，例如“为什么这集的雨声特别响”“修复版和原版到底差在哪”。这些问题看似细碎，却是观众与内容之间最真实的连接点，也是品牌<strong>用户至上</strong>理念的具体落地。</p>
+
+        <h3>四、从行业出发：一个官网应有的社会责任与长期主义</h3>
+        <p>作为深耕垂直领域的动漫视频平台，黑兽2动漫樱花动漫在版权保护、未成年人观看提示与创作者权益保障上保持稳定投入。我们公开内容来源说明，明确二次创作的授权边界，并持续开展动画知识的科普内容，让更多人理解一部作品背后的工序与成本。行业领先不是一句口号，而是一套可以被检验的流程：清晰的授权链路、稳定的更新机制、可追溯的审核记录与开放的反馈渠道。</p>
+        <p>面向未来，平台会继续扩大原创扶持计划，开放更多幕后素材与教学资源，并在城市探索、在地文化等方向上做更深的积累。我们希望这个官网既是作品的入口，也是创作方法的档案馆，更是一个包容、多元、持续成长的社区。无论你是第一次点开《黑兽2》，还是已经追了十年的老观众，都能在这里找到属于自己的那一帧。</p>
+      </div>
+      <aside class="hs-side">
+        <div class="hs-side__card">
+          <h4>平台关键词</h4>
+          <ul>
+            <li>官方网站 · 官方发布</li>
+            <li>原创正版 · 高清修复</li>
+            <li>垂直领域 · 内容生态</li>
+            <li>持续运营 · 品质口碑</li>
+            <li>创作者社区 · 用户首选</li>
+          </ul>
+        </div>
+        <div class="hs-side__card">
+          <h4>内容数据一览</h4>
+          <ol>
+            <li>正版片库 <b>1,286</b> 部</li>
+            <li>签约创作者 <b>342</b> 位</li>
+            <li>累计播放 <b>9,700万</b> 次</li>
+            <li>月度投稿 <b>1,150</b> 条</li>
+          </ol>
+        </div>
+        <div class="hs-side__card">
+          <h4>推荐入口</h4>
+          <ul>
+            <li><a href="#hs-videos">精选视频片单</a></li>
+            <li><a href="#hs-authors">创作者矩阵</a></li>
+            <li><a href="#hs-rank">口碑与数据榜单</a></li>
+            <li><a href="#hs-updates">企业动态与更新日志</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- AUTHORS -->
+  <section class="hs-sec" id="hs-authors" aria-labelledby="hsAuthorsTitle">
+    <div class="hs-wrap">
+      <div class="hs-sec__head">
+        <div>
+          <h2 id="hsAuthorsTitle">创作者矩阵 · <span>黑兽2动漫樱花动漫</span>签约作者</h2>
+          <p>四位长期合作的创作者，覆盖分镜、访谈、城市与治愈影像方向，构成平台稳定的内容供给。</p>
+        </div>
+        <a class="hs-sec__more" href="#hs-faq">申请签约 →</a>
+      </div>
+      <div class="hs-authors">
+        <article class="hs-author">
+          <div class="hs-author__head">
+            <span class="hs-avatar" style="background:linear-gradient(140deg,#ff4d6d,#ffd166)">雾</span>
+            <div>
+              <div class="hs-author__name">雾岛分镜室</div>
+              <div class="hs-author__field">分镜解析 / 教程</div>
+            </div>
+          </div>
+          <p>动画分镜师出身，做过七年电视动画的分集构图。擅长把复杂的调度讲成普通人能听懂的三步法，坚持手绘拆解，每期附可下载模板。</p>
+          <div class="hs-author__stat"><span><b>86</b> 作品</span><span><b>24.6万</b> 粉丝</span></div>
+          <button class="hs-author__btn" type="button" data-hs-author="雾岛分镜室">查看作者档案</button>
+        </article>
+        <article class="hs-author">
+          <div class="hs-author__head">
+            <span class="hs-avatar" style="background:linear-gradient(140deg,#4dc9ff,#7b5cff)">镜</span>
+            <div>
+              <div class="hs-author__name">镜间</div>
+              <div class="hs-author__field">人物访谈 / 幕后</div>
+            </div>
+          </div>
+          <p>纪录片导演出身，习惯在片场安静地等一个真实瞬间。她的访谈不追热点，更在意被访者说话时的停顿，作品常被观众称为“慢但清楚”。</p>
+          <div class="hs-author__stat"><span><b>61</b> 作品</span><span><b>18.2万</b> 粉丝</span></div>
+          <button class="hs-author__btn" type="button" data-hs-author="镜间">查看作者档案</button>
+        </article>
+        <article class="hs-author">
+          <div class="hs-author__head">
+            <span class="hs-avatar" style="background:linear-gradient(140deg,#4dffa6,#4dc9ff)">屿</span>
+            <div>
+              <div class="hs-author__name">南屿</div>
+              <div class="hs-author__field">治愈影像 / 日常记录</div>
+            </div>
+          </div>
+          <p>自由摄影师，长期记录小城生活。她的镜头里很少有台词，更多是窗、雨、晾衣绳与傍晚的灯，作品节奏很慢，却总有人反复回看。</p>
+          <div class="hs-author__stat"><span><b>112</b> 作品</span><span><b>31.5万</b> 粉丝</span></div>
+          <button class="hs-author__btn" type="button" data-hs-author="南屿">查看作者档案</button>
+        </article>
+        <article class="hs-author">
+          <div class="hs-author__head">
+            <span class="hs-avatar" style="background:linear-gradient(140deg,#ffd166,#ff8a5c)">铅</span>
+            <div>
+              <div class="hs-author__name">铅笔格</div>
+              <div class="hs-author__field">教程干货 / 手作</div>
+            </div>
+          </div>
+          <p>美术老师，也是手作爱好者。他相信“跟着做一遍”比“听懂”更重要，因此每条教程都配完整练习清单，评论区常有人交作业。</p>
+          <div class="hs-author__stat"><span><b>74</b> 作品</span><span><b>15.8万</b> 粉丝</span></div>
+          <button class="hs-author__btn" type="button" data-hs-author="铅笔格">查看作者档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RANK + REVIEWS -->
+  <section class="hs-sec hs-sec--alt" id="hs-rank" aria-labelledby="hsRankTitle">
+    <div class="hs-wrap">
+      <div class="hs-sec__head">
+        <div>
+          <h2 id="hsRankTitle">口碑与数据榜单 · <span>黑兽2动漫樱花动漫</span>社区反馈</h2>
+          <p>热度榜、新人榜与口碑榜综合计算，评价来自真实观众与创作者，长度与角度各不相同。</p>
+        </div>
+        <a class="hs-sec__more" href="#hs-updates">本期榜单规则 →</a>
+      </div>
+
+      <div class="hs-rank">
+        <div class="hs-rank__col">
+          <h3>热度榜 <span>近 7 日</span></h3>
+          <ol>
+            <li><span>夜雨调度的 27 个镜头</span><em>128.4万</em></li>
+            <li><span>4K 修复的六个月</span><em>56.2万</em></li>
+            <li><span>配音棚里的三小时</span><em>41.8万</em></li>
+            <li><span>取景地老街实拍对照</span><em>33.5万</em></li>
+            <li><span>把片尾曲听成日常</span><em>22.9万</em></li>
+          </ol>
+        </div>
+        <div class="hs-rank__col">
+          <h3>新人榜 <span>本月</span></h3>
+          <ol>
+            <li><span>小满的逐帧笔记</span><em>新人第 1</em></li>
+            <li><span>旧录像带修复所</span><em>新人第 2</em></li>
+            <li><span>三分钟听片头</span><em>新人第 3</em></li>
+            <li><span>纸上分镜练习生</span><em>新人第 4</em></li>
+            <li><span>雨天取景小队</span><em>新人第 5</em></li>
+          </ol>
+        </div>
+        <div class="hs-rank__col">
+          <h3>口碑榜 <span>综合评分</span></h3>
+          <ol>
+            <li><span>一帧一帧看黑兽2</span><em>9.6</em></li>
+            <li><span>樱花的创作者们</span><em>9.4</em></li>
+            <li><span>动画取景地城市漫游</span><em>9.3</em></li>
+            <li><span>色彩方法论访谈</span><em>9.1</em></li>
+            <li><span>五分钟分镜入门</span><em>8.9</em></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="hs-reviews">
+        <article class="hs-review"><div class="hs-review__top"><b>林一·分镜爱好者</b><span>评分 5.0</span></div><p>第一次看到有人把镜头调度讲得这么清楚，跟着暂停看了两遍，终于明白那场戏为什么让人喘不过气。</p></article>
+        <article class="hs-review"><div class="hs-review__top"><b>阿潇</b><span>评分 4.5</span></div><p>修复版确实值得等，暗部细节比我收藏的旧版本好太多。唯一希望后续能把字幕样式也统一一下。</p></article>
+        <article class="hs-review"><div class="hs-review__top"><b>周末看片会</b><span>评分 5.0</span></div><p>我们是四个人的小看片群，每周五固定在平台看首播，第二天再一起看解析，已经变成一种习惯了。</p></article>
+        <article class="hs-review"><div class="hs-review__top"><b>不睡午觉的人</b><span>评分 4.0</span></div><p>幕后那期剪辑有点散，但素材本身很有价值。能看到失败的镜头被放出来，反而更信任这个团队。</p></article>
+        <article class="hs-review"><div class="hs-review__top"><b>铅笔与橡皮</b><span>评分 5.0</span></div><p>作为美术生，教程区是我的宝库。模板下载下来真的能用，希望多出一些构图方向的练习。</p></article>
+        <article class="hs-review"><div class="hs-review__top"><b>南边小城</b><span>评分 4.8</span></div><p>城市漫游那一集看到了我家附近的天桥，瞬间有点想哭。原来动画里真的住着我们生活过的城市。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS + FAQ -->
+  <section class="hs-sec" id="hs-updates" aria-labelledby="hsUpdatesTitle">
+    <div class="hs-wrap">
+      <div class="hs-sec__head">
+        <div>
+          <h2 id="hsUpdatesTitle">企业动态与常见问题 · <span>黑兽2动漫樱花动漫</span>官方发布</h2>
+          <p>品牌资讯、内容更新与活动报名同步公开，帮助创作者和观众了解平台的最新进展。</p>
+        </div>
+        <a class="hs-sec__more" href="#hs-contact">联系与合作 →</a>
+      </div>
+
+      <div class="hs-news">
+        <article class="hs-news__item">
+          <time datetime="2026-11-18">2026-11-18</time>
+          <h3>冬季创作挑战开启报名</h3>
+          <p>主题为“一帧日常”，投稿时长 3–8 分钟，优秀作品将获得首页推荐与官方联合传播支持。</p>
+        </article>
+        <article class="hs-news__item">
+          <time datetime="2026-11-12">2026-11-12</time>
+          <h3>《黑兽2》修复版片库扩容</h3>
+          <p>第一季全部素材完成 4K 重制，新增暗部细节与音轨校正，已开放高清下载权限说明。</p>
+        </article>
+        <article class="hs-news__item">
+          <time datetime="2026-11-05">2026-11-05</time>
+          <h3>创作者扶持计划第三期公示</h3>
+          <p>本期共 26 位创作者入选，覆盖分镜、访谈、城市探索方向，名单已在官方发布页公示。</p>
+        </article>
+      </div>
+
+      <div class="hs-faq" id="hs-faq" style="margin-top:28px">
+        <details><summary>平台内容是正版授权的吗？</summary><p>是的。黑兽2动漫樱花动漫所有上线内容均经过授权核对，修复版本也保留完整的来源说明，官方发布页可查询相关记录。</p></details>
+        <details><summary>如何参与创作挑战并投稿？</summary><p>通过页面的“我要投稿”入口提交作品信息，编辑会在三个工作日内回复。作品需为原创，二次创作需注明授权来源。</p></details>
+        <details><summary>修复版和原版有什么差别？</summary><p>修复版主要在动态范围、压缩噪点与音轨校准上做处理，不改变剧情与镜头，目标是让画面在更大屏幕上依然清晰。</p></details>
+        <details><summary>口碑榜的评分怎么来的？</summary><p>综合播放完成率、收藏率与短评情感倾向计算，避免单纯以播放量排序，让认真做内容的中小创作者也能被看见。</p></details>
+        <details><summary>可以下载视频离线观看吗？</summary><p>部分官方发布内容提供高清下载说明，具体以作品页标注为准，未经授权的转载与二次分发不在许可范围内。</p></details>
+        <details><summary>创作者签约有什么要求？</summary><p>需要稳定的更新计划与明确的垂直方向，平台会提供剪辑规范、字幕模板与分发支持，具体可联系官方合作渠道。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / PARTNERS -->
+  <section class="hs-sec hs-sec--alt" id="hs-contact" aria-labelledby="hsContactTitle">
+    <div class="hs-wrap">
+      <div class="hs-sec__head">
+        <div>
+          <h2 id="hsContactTitle">联系与合作 · <span>黑兽2动漫樱花动漫</span>品牌伙伴</h2>
+          <p>企业合作、内容授权与投稿咨询统一入口，也欢迎更多伙伴加入我们的内容生态。</p>
+        </div>
+        <button class="hs-btn hs-btn--ghost" type="button" data-hs-modal="report">反馈与建议</button>
+      </div>
+      <div class="hs-cols">
+        <article class="hs-panel">
+          <h3>投稿与合作</h3>
+          <p>原创视频投稿、专题企划合作与品牌联名，均可通过官方渠道提交，我们会在三个工作日内回复。</p>
+          <ul>
+            <li>投稿邮箱：submit@heishou2-sakura.example</li>
+            <li>商务合作：partner@heishou2-sakura.example</li>
+            <li>工作时间：周一至周五 10:00–19:00</li>
+          </ul>
+        </article>
+        <article class="hs-panel">
+          <h3>创作灵感</h3>
+          <p>不知道拍什么？可以从这三个方向开始：一次只讲一个镜头的拆解、一段没有台词的三分钟、一条属于你所在城市的老街。</p>
+          <ul>
+            <li>脚本灵感：用“问题—尝试—结论”结构</li>
+            <li>剪辑思路：先定节奏，再选配乐</li>
+            <li>标题建议：具体名词 + 明确动作</li>
+          </ul>
+        </article>
+        <article class="hs-panel">
+          <h3>社区公约</h3>
+          <p>尊重原创、理性讨论、拒绝剧透伤害。平台对侵权行为保持零容忍，也鼓励创作者互相支持、共同成长。</p>
+          <ul>
+            <li>转载需注明来源与授权</li>
+            <li>评论区禁止人身攻击</li>
+            <li>举报将在 24 小时内处理</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="hs-partners">
+        <div class="hs-partner"><b>雾岛工作室</b>分镜与美术支持</div>
+        <div class="hs-partner"><b>南屿影像</b>治愈影像联合出品</div>
+        <div class="hs-partner"><b>镜间纪录</b>人物访谈合作方</div>
+        <div class="hs-partner"><b>铅笔格课堂</b>教程内容共建</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="hs-footer">
+  <div class="hs-wrap">
+    <div class="hs-footer__grid">
+      <div>
+        <h3>黑兽2动漫樱花动漫 · 官方网站</h3>
+        <p>专注原创正版高清动漫视频内容的企业级平台，深耕垂直领域，持续运营内容生态与创作者社区。本站为品牌官网信息展示页，作品与素材均以官方发布为准。</p>
+      </div>
+      <div>
+        <h3>快速导航</h3>
+        <ul>
+          <li><a href="#hs-videos">精选视频</a></li>
+          <li><a href="#hs-topics">专题企划</a></li>
+          <li><a href="#hs-authors">创作者矩阵</a></li>
+          <li><a href="#hs-rank">口碑榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>官方服务</h3>
+        <ul>
+          <li><a href="#hs-updates">企业动态</a></li>
+          <li><a href="#hs-faq">常见问题</a></li>
+          <li><a href="#hs-contact">投稿与合作</a></li>
+          <li><a href="#hs-contact">反馈与建议</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>品牌信息</h3>
+        <ul>
+          <li>运营主体：樱花动漫内容运营中心</li>
+          <li>内容备案：持续更新中</li>
+          <li>版权声明：原创正版，禁止未授权转载</li>
+          <li>用户至上 · 匠心 · 多元</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hs-footer__bottom">
+      <span>© 2026 黑兽2动漫樱花动漫 官方网站 · 版权所有 · 持续运营中</span>
+      <span>品牌备案号：HS2-SAKURA-2026 · 内容生态与创作者社区</span>
+    </div>
+  </div>
+</footer>
+
+<button class="hs-top" id="hsTopBtn" type="button" aria-label="回到顶部">↑</button>
+<div class="hs-toast" id="hsToast" role="status" aria-live="polite"></div>
+
+<div class="hs-modal" id="hsModal" role="dialog" aria-modal="true" aria-labelledby="hsModalTitle">
+  <div class="hs-modal__box">
+    <h3 id="hsModalTitle">提示</h3>
+    <p id="hsModalText"></p>
+    <div id="hsModalExtra"></div>
+    <div class="hs-share" id="hsShareBox" hidden>
+      <button type="button" data-hs-share-item="微信">微信</button>
+      <button type="button" data-hs-share-item="微博">微博</button>
+      <button type="button" data-hs-share-item="QQ">QQ</button>
+    </div>
+    <button class="hs-btn hs-btn--ghost" type="button" id="hsModalClose">关闭</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('hsToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2000);
+  }
+
+  /* mobile nav */
+  var burger = document.getElementById('hsBurger');
+  var nav = document.getElementById('hsNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if (e.target.tagName === 'A' && window.innerWidth <= 760){
+      nav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* search */
+  var input = document.getElementById('hsSearchInput');
+  var searchBtn = document.getElementById('hsSearchBtn');
+  var hint = document.getElementById('hsSearchHint');
+  var keywords = ['黑兽2','分镜解析','樱花动漫','幕后修复','人物访谈','城市探索','治愈影像','教程干货','口碑榜','投稿'];
+  function doSearch(){
+    var q = input.value.trim();
+    if (!q){
+      hint.textContent = '试试搜索：黑兽2、分镜解析、樱花动漫';
+      hint.classList.add('is-on');
+      return;
+    }
+    var hit = null;
+    for (var i=0;i<keywords.length;i++){
+      if (keywords[i].indexOf(q) !== -1 || q.indexOf(keywords[i]) !== -1){ hit = keywords[i]; break; }
+    }
+    hint.textContent = hit ? '已为你定位到「' + hit + '」相关板块，可点击导航继续浏览' : '暂未找到「' + q + '」直接匹配，推荐查看精选视频或口碑榜';
+    hint.classList.add('is-on');
+    toast(hit ? '搜索命中：' + hit : '已显示搜索建议');
+  }
+  searchBtn.addEventListener('click', doSearch);
+  input.addEventListener('keydown', function(e){ if (e.key === 'Enter') doSearch(); });
+  document.addEventListener('click', function(e){
+    if (!hint.contains(e.target) && e.target !== input && e.target !== searchBtn){
+      hint.classList.remove('is-on');
+    }
+  });
+
+  /* like / fav */
+  function bindToggle(selector, onMsg, offMsg){
+    document.querySelectorAll(selector).forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var on = btn.classList.toggle('is-on');
+        btn.setAttribute('aria-pressed', on ? 'true':'false');
+        toast(on ? onMsg : offMsg);
+      });
+    });
+  }
+  bindToggle('[data-hs-like]', '已点赞，感谢支持创作者', '已取消点赞');
+  bindToggle('[data-hs-fav]', '已加入收藏，稍后可在片单中查看', '已取消收藏');
+
+  /* tag filter */
+  var tagBar = document.getElementById('hsTagBar');
+  var cards = document.querySelectorAll('#hsFocusList [data-hs-cat], #hsMoreList [data-hs-cat], .hs-focus__main[data-hs-cat]');
+  tagBar.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-hs-tag]');
+    if (!btn) return;
+    tagBar.querySelectorAll('.hs-tag').forEach(function(b){ b.classList.remove('is-on'); });
+    btn.classList.add('is-on');
+    var tag = btn.getAttribute('data-hs-tag');
+    var shown = 0;
+    cards.forEach(function(card){
+      var match = (tag === 'all') || (card.getAttribute('data-hs-cat') === tag);
+      card.style.display = match ? '' : 'none';
+      if (match) shown++;
+    });
+    toast(tag === 'all' ? '已显示全部内容' : '筛选「' + tag + '」，共 ' + shown + ' 项');
+  });
+
+  /* share */
+  function openModal(title, text, extraHtml, showShare){
+    document.getElementById('hsModalTitle').textContent = title;
+    document.getElementById('hsModalText').textContent = text;
+    document.getElementById('hsModalExtra').innerHTML = extraHtml || '';
+    document.getElementById('hsShareBox').hidden = !showShare;
+    document.getElementById('hsModal').classList.add('is-on');
+  }
+  function closeModal(){
+    document.getElementById('hsModal').classList.remove('is-on');
+  }
+  document.getElementById('hsModalClose').addEventListener('click', closeModal);
+  document.getElementById('hsModal').addEventListener('click', function(e){
+    if (e.target === this) closeModal();
+  });
+
+  document.querySelectorAll('[data-hs-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('分享这段内容', '选择分享方式，或复制链接发送给朋友。', '', true);
+    });
+  });
+  document.querySelectorAll('[data-hs-share-item]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      toast('已复制分享文案，可粘贴到' + btn.getAttribute('data-hs-share-item'));
+      closeModal();
+    });
+  });
+
+  /* author modal */
+  document.querySelectorAll('[data-hs-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-hs-author');
+      openModal(name, '该创作者长期在平台发布原创内容，擅长方向见作者卡片。可在精选视频区查看全部作品，或在投稿入口申请联合创作。', '', false);
+    });
+  });
+
+  /* modal buttons */
+  document.querySelectorAll('[data-hs-modal]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var type = btn.getAttribute('data-hs-modal');
+      if (type === 'submit'){
+        openModal('我要投稿', '请准备作品标题、3 分钟以内的样片说明与授权来源说明，通过投稿入口提交，编辑将在三个工作日内回复。', '', false);
+      } else {
+        openModal('反馈与建议', '遇到播放问题、版权疑问或社区违规内容，可通过反馈入口提交，我们会在 24 小时内跟进处理。', '', false);
+      }
+    });
+  });
+
+  /* copy link helper via share */
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeModal();
+  });
+
+  /* back to top */
+  var topBtn = document.getElementById('hsTopBtn');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 500) topBtn.classList.add('is-on');
+    else topBtn.classList.remove('is-on');
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* number rolling for stats */
+  var stats = document.querySelectorAll('.hs-stats b');
+  var statDone = false;
+  var statData = ['1,286','342','9,700万'];
+  function rollStats(){
+    if (statDone) return;
+    statDone = true;
+    stats.forEach(function(el, idx){
+      var target = statData[idx] || el.textContent;
+      el.textContent = '0';
+      var step = 0;
+      var timer = setInterval(function(){
+        step++;
+        if (step >= 24){ el.textContent = target; clearInterval(timer); return; }
+        var num = step / 24;
+        if (idx === 0) el.textContent = Math.round(1286 * num).toLocaleString();
+        else if (idx === 1) el.textContent = Math.round(342 * num);
+        else el.textContent = (Math.round(9700 * num)).toLocaleString() + '万';
+      }, 34);
+    });
+  }
+  var hero = document.querySelector('.hs-hero');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if (en.isIntersecting) rollStats(); });
+  }, {threshold:.4});
+  if (hero) io.observe(hero);
+
+})();
+</script>
+</body>
+  </html>
